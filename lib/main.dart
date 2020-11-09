@@ -18,22 +18,8 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// class MyHomePage extends StatefulWidget {
-//   MyHomePage({Key key, this.title}) : super(key: key);
-//   final String title;
-
-//   @override
-//   _MyHomePageState createState() => _MyHomePageState();
-// }
-
 class _MyHomePageState extends StatelessWidget {
   final controller = Controller();
-
-  // void _incrementCounter() {
-  //   setState(() {
-  //     _counter++;
-  //   });
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +36,7 @@ class _MyHomePageState extends StatelessWidget {
             ),
             Observer(builder: (_) {
               return Text(
-                '${controller.counter.value}',
+                '${controller.counter}',
                 style: Theme.of(context).textTheme.headline4,
               );
             })
